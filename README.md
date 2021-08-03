@@ -30,8 +30,8 @@ To install requirements:
 
 ## Usage: example
 ```python
-from pyzkiln_core import displayActiveJobs
+from pyzkiln_core import display_active_jobs
 
-activeJobs = displayActiveJobs()
-print(activeJobs[3]['JobName'])
+active_jobs = display_active_jobs()
+print(active_jobs[3]['JobName'])
 ```
