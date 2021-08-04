@@ -46,8 +46,7 @@ def display_active_jobs():
     cmdtext = cmd_dictionary["stdout_response"]
 
     # Get to the text we care about and make them separate list lines
-    textlines = cmdtext[cmdtext.find("\n", cmdtext.find("JOBS")+1)+1:
-                        ].splitlines()
+    textlines = cmdtext[cmdtext.find("\n", cmdtext.find("JOBS")+1)+1:].splitlines()
 
     firstline = True
     for textline in textlines:
