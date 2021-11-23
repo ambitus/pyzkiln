@@ -17,6 +17,7 @@ setup(
     packages = find_packages(),
     long_description = long_description,
     long_description_content_type = 'text/markdown',
+    include_package_data = True,
     classifiers = [
         "Programming Language :: Python :: 3",
         "License ::  Apache License",
