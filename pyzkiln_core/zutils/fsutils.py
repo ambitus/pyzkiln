@@ -282,7 +282,7 @@ def display_filesystem_info(path_name: str):
     fsinfo_results_dic = {}
 
     fsinfo_cmd = subprocess.run(
-        ["df", "-kvP", fs_name], capture_output=True
+        ["df", "-kvP", path_name], capture_output=True
     )
 
     if fsinfo_cmd.returncode != 0:
