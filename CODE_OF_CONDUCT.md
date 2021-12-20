@@ -1,1 +1,1 @@
-All participants agree to abide by the Code of Conduct available at https://github.com/openmainframeproject/tsc/blob/master/CODE_OF_CONDUCT.md.
+All participants agree to abide by The Linux Foundation Code of Conduct available at http://events.linuxfoundation.org/code-of-conduct.
