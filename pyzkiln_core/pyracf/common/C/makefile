@@ -6,7 +6,7 @@ ARCH_NAME=common.a
 DEPS=json.h fileio.h transcode.h keyval.h log.h dump.h bytes.h common_types.h 
 
 SRCS=json_prs.c json_gen.c fileio.c transcode.c keyval.c log.c dump.c bytes.c
-OBJS=json_prs.o json_gen.o fileio.otranscode.o keyval.o log.o dump.o bytes.o
+OBJS=json_prs.o json_gen.o fileio.o transcode.o keyval.o log.o dump.o bytes.o
 
 # Platform commands
 CC=c89
