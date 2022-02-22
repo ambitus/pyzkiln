@@ -9,3 +9,5 @@
 - Lei Wang (wlwangwl@cn.ibm.com)
 - Luisa Martinez (martinel@us.ibm.com)
 - Trent Balta (Trent.Balta@ibm.com)
+- Joe Bostian (jbostian@us.ibm.com)
+- Daniel Gisolfi (Daniel.Gisolfi@ibm.com)
