@@ -16,7 +16,7 @@ The tools in this repository will rely on:
   - Must enable ZOAU Python APIs (zoautil_py) by installing and configuring pip installable package. For more information visit [Installing and configuring ZOA Utilities](https://www.ibm.com/support/knowledgecenter/SSKFYE_1.1.0/install.html)
 - [IBM Open Entprise SDK for Python](https://www.ibm.com/products/open-enterprise-python-zos)
 
-## Pyzkiln Content
+## pyzkiln_core Content
 
 Pyzkiln-core package is made up of the following:
   - zcmds - Modules that return the output from a set of z/os operator commands in an array of Python dictionaries
@@ -30,7 +30,7 @@ More detailed documentation under [/docs](https://github.com/ambitus/pyzkiln/blo
 
 1. Build Manually using setup.py 
 
-Download package ZIP file or clone. In z/OS system, navigate to root directory of pyzkiln package and issue the following command:
+Download package ZIP file or clone. In z/OS system, navigate to root directory of pyzkiln_core package and issue the following command:
 
     python3 setup.py sdist bdist_wheel
 
@@ -40,7 +40,7 @@ Navigate into /dist directory and issue the following command
 
 2. Use provided Wheel 
 
-Download the wheel located in /dist. In z/OS system, navigate to the path where wheel is located and issue the following command:
+Download the wheel located root directory. In z/OS system, navigate to the path where wheel is located and issue the following command:
 
     pip install pyzkiln_core-0.1-py3-none-any.whl
   
@@ -65,7 +65,7 @@ export LIBPATH=${PY_RACF_HOME}:$LIBPATH
 
 Note: to find location of pyracf root use the pip show command 
 
-      pip show pyzkiln-core 
+      pip show pyzkiln_core 
 
 More pyracf documentation can be found [/pyracf](https://github.com/ambitus/pyzkiln/tree/main/pyzkiln_core/pyracf) 
 
