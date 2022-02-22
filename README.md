@@ -47,11 +47,12 @@ Download the wheel located in /dist. In z/OS system, navigate to the path where 
 ## Pyracf configuration 
 
 pyracf will need the following environment variables configured:
-
+```
 PY_RACF_HOME=<location of pyracf root>
 PYRACF_HOME=<location of pyracf root>
 PYTHONPATH=$PYTHONPATH:$PY_RACF_HOME:PY_RACF_HOME/common/python:$PY_RACF_HOME/R_admin/python
 LIBPATH=$LIBPATH:$PYRACF_HOME
+```
 
 example .profile 
 ```
