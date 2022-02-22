@@ -1,5 +1,5 @@
 #!/bin/env python3
-from pyzkiln_core import displayActiveJobs
+from pyzkiln_core import display_active_jobs
 import sys
 ##############################################################################
 #                                                                            #
