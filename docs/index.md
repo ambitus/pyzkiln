@@ -112,3 +112,8 @@ Operator commands included:
     - Input: searchFor(str), searchKey (str) (Optional)
     - Output: joblist (list of Dictionaries)
 
+
+## py_racf
+
+A Python interface to the library of services provided by RACF.
+More documentation (https://github.com/ambitus/pyzkiln/tree/main/pyzkiln_core/pyracf) 
