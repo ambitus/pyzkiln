@@ -7,6 +7,7 @@
 """
 import py_racf
 from pxtr import Pxtr
+from uadmin import Uadmin 
 
 
 # R_admin flags.
@@ -116,7 +117,8 @@ class Radmin:
     def init_func(self, func_type=None):
         if func_type == ADMIN_ADD_USER:
             self.fgrp = ADMIN_GRP_UADMIN
-            return None
+            self.func = Uadmin(self.racf, self, func_type)
+            return
         elif func_type == ADMIN_DEL_USER:
             self.fgrp = ADMIN_GRP_UADMIN
             return None
