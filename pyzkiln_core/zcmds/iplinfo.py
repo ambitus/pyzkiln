@@ -29,7 +29,7 @@ IEE254I. That will generate a dictionary with the following keys:
 If you run iplinfo with a sysparm, it will return a dictionary
 with the following Keys
  Parameter - The parameter queried
- State - The sate of that paramter
+ State - The state of that parameter
 '''
 
 
@@ -72,24 +72,24 @@ def iplinfo(sysparm=None):
             if "ARCHLVL" in line:
                 archlvl = line[line.find("ARCHLVL =")+10:
                                line.find("MTL")].strip()
-                mltshr = line[line.find("MTLSHARE =")+12:].strip()
+                mltshr = line[line.find("MTLSHARE =")+11:].strip()
 
             if "IEASYM" in line:
-                ieasym = line[line.find("(")+1:line.find(")")-1]
+                ieasym = line[line.find("(")+1:line.find(")")]
 
             if "IEASYS" in line:
                 ieasys = line[line.find("("):]
 
             if "IODF" in line:
-                iodforigin = line[line.find("ORIGINAL(")+9:line.find(")")-1]
-                iodfcurr = line[line.find("CURRENT(")+9:line.find(")",
+                iodforigin = line[line.find("ORIGINAL(")+9:line.find(")")]
+                iodfcurr = line[line.find("CURRENT(")+8:line.find(")",
                                 line.find(")")+1)]
 
             if "IPL DEVICE" in line:
-                iplorigin = line[line.find("ORIGINAL(")+10:line.find(")")-1]
-                iplcurr = line[line.find("CURRENT(")+9:line.find(")",
+                iplorigin = line[line.find("ORIGINAL(")+9:line.find(")")]
+                iplcurr = line[line.find("CURRENT(")+8:line.find(")",
                                line.find(")")+1)]
-                iplvol = line[line.find("VOLUME(")+8:line.rfind(")")-1]
+                iplvol = line[line.find("VOLUME(")+7:line.rfind(")")]
 
         return_dictionary = {"IPL Time": time, "IPL Date": date,
                              "Release": release, "License": license,
