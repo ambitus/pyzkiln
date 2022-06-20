@@ -13,7 +13,7 @@ Consider contributing to this repository. Anyone interested in creating Python b
 The tools in this repository will rely on:
 
 - [Open Automation Utilities (ZOAU)](https://www.ibm.com/docs/en/zoau/1.2.0)
-  - Must enable ZOAU Python APIs (zoautil_py) by installing and configuring pip installable package. For more information visit [Installing and configuring ZOA Utilities](https://www.ibm.com/support/knowledgecenter/SSKFYE_1.1.0/install.html)
+  - Must enable ZOAU Python APIs (zoautil_py) by installing and configuring pip installable package. For more information visit [Installing and configuring ZOA Utilities](https://www.ibm.com/docs/en/zoau/1.2.0?topic=installing-configuring-zoa-utilities)
 - [IBM Open Entprise SDK for Python](https://www.ibm.com/products/open-enterprise-python-zos)
 
 ## pyzkiln_core Content
