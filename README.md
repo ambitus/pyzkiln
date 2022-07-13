@@ -34,6 +34,8 @@ Download package ZIP file or clone. In z/OS system, navigate to root directory o
 
     python3 setup.py sdist bdist_wheel
 
+   *Note: if transferring zip file via sftp, make sure files are tagged properly*
+
 Navigate into /dist directory and issue the following command 
 
     pip install pyzkiln_core-0.1-py3-none-any.whl

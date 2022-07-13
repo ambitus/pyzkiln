@@ -36,7 +36,6 @@ setup(
     packages = find_packages(),
     long_description = open("README.md", "r").read(),
     long_description_content_type = 'text/markdown',
-    include_package_data = True,
     classifiers = [
         "Programming Language :: Python :: 3",
         "License ::  Apache License",
@@ -45,6 +44,6 @@ setup(
     python_requires = '>=3.6',
     cmdclass = {
         'build_py': Build,
-    }
+    },
+    include_package_data = True
 )
-

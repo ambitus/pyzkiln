@@ -4,5 +4,6 @@ include pyzkiln_core/zutils/ConfigFile.properties *
 include pyzkiln_core/pyracf/makefile *
 include pyzkiln_core/pyracf/libracf.so 
 include pyzkiln_core/pyracf/libracf.x 
+include pyzkiln_core/pyracf/py_racf.py
 recursive-include pyzkiln_core/pyracf/common *
 recursive-include pyzkiln_core/pyracf/R_admin *
