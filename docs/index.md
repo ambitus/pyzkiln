@@ -88,7 +88,7 @@ Operator commands included:
             - mountpath (str): path to mount zFS
         - Returns:
             - Resulting return code of mount command
-    -  fsutils.unmount_fs(*fs_name*) : Pass zFS mountpoint to unmount the file system  
+    -  fsutils.unmount_fs(*fs_name*): Pass zFS mountpoint to unmount the file system  
         - Parameters:
             - fs_name (str): path to mounted zFS
         - Returns:
@@ -108,9 +108,21 @@ Operator commands included:
     - Note:
         - This command requires **superuser** authority
         - This command relies on Z Open Automation Utilities (ZOAU)
-- displayActiveJobs(searchFor,searchKey) : list all active jobs that meet the criteria seachFor in each dictionary with the key searchKey
+- displayActiveJobs(*searchFor,searchKey*) : list all active jobs that meet the criteria seachFor in each dictionary with the key searchKey
     - Input: searchFor(str), searchKey (str) (Optional)
     - Output: joblist (list of Dictionaries)
+
+- runrexx(*authorized, library,program_info, inputdata, outputinfo*): REXX code in a TSO address space
+    - Parameters: 
+        - authorized (bool): A flag to determine if the code run authorized
+        - library (str): library that the REXX code is in
+        - program_info (str): A string containing the program and its arguments
+        - inputdata (list): a list of strings containing input lines without newlines
+        - outputinfo (dict): A dictionary containin - "DDName", "Filename", "Dataset"
+    - Returns: structure with following keys: 
+        - returninfo: return code, return messages, and stdout and stderr data 
+        - systsprtfile: filename that the SYSTSPRT DD pointed to 
+        - sysprtfile: filename that the SYSPRINT DD pointed to 
 
 
 ## py_racf
