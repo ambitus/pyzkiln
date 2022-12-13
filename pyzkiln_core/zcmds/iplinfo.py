@@ -28,8 +28,6 @@ with the following Keys
  State - The state of that paramter
 """
 import sys
-import os
-import argparse
 from zoautil_py import opercmd
 
 
@@ -118,31 +116,14 @@ def iplinfo(sysparm=None):
     return return_dictionary
 
 
-def parse_args(argv=None):
-    """
-    Handle the arguments.
-    It relies on the argparse module.
-    """
-    program_name = os.path.basename(sys.argv[0])
-
-    if argv is None:
-        argv = sys.argv[1:]
-
-        parser = argparse.ArgumentParser(program_name)
-        parser.add_argument(
-            "-s", "--sysparm", default=None, help="A sysparm you want to query."
-        )
-    opts = parser.parse_args(argv)
-    return opts
-
-
 def main():
     """
-    main function:
-    gather parms and call the iplinfo function
+    Call the iplinfo function
     """
-    args = parse_args()
-    print(iplinfo(args.sysparm))
+    if len(sys.argv) > 1:
+        print(iplinfo(sys.argv[1]))
+    else:
+        print(iplinfo())
 
 
 if __name__ == "__main__":
