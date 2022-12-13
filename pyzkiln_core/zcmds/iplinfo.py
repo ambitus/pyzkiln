@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-'''
+"""
 iplinfo
 return the IPL info of the z/OS system as a dictionary.
 
@@ -25,8 +25,8 @@ IEE254I. That will generate a dictionary with the following keys:
 If you run iplinfo with a sysparm, it will return a dictionary
 with the following Keys
  Parameter - The parameter queried
- State - The sate of that paramter
-'''
+ State - The state of that paramter
+"""
 import sys
 import os
 import argparse
