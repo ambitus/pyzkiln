@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 """Code rights.
 
 Copyright IBM Corp 2023.
