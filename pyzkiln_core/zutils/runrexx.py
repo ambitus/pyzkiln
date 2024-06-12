@@ -6,7 +6,13 @@ import sys
 from datetime import datetime
 
 from zoautil_py import mvscmd
-from zoautil_py.types import DatasetDefinition, DDStatement, FileDefinition
+
+# First attempt an import of zoautil_py.ztypes (ZOAU 1.3)
+# If that fails, fall back to zoautil_py.types (ZOAU 1.2)
+try:
+    from zoautil_py.ztypes import DatasetDefinition, DDStatement, FileDefinition
+except ImportError as e:
+    from zoautil_py.types import DatasetDefinition, DDStatement, FileDefinition
 
 
 def _write_out_the_input(inputdata, filename):
