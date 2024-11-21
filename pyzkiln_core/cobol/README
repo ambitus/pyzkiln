@@ -1,0 +1,19 @@
+## Overview
+This directory contains a set of test files designed to validate and explain COBOL to Python Communication. 
+The tests cover:
+-	64-bit COBOL to 64-bit Python
+-	64-bit Python to 64-bit COBOL
+-	64-bit Python to 31-bit COBOL
+-	31-bit COBOL to 64-bit Python
+
+Since Python on z/OS is structured around CPython, Python data types will be formatted through C datatypes before being sent to COBOL. 
+To better explain interoperability between C and COBOL please refer to: 
+https://www.ibm.com/docs/en/zos/2.5.0?topic=applications-communicating-between-c-cobol 
+
+## Usage
+1.	Open the env.setup file and follow the instruction inside to set up your environment, once completed run it with the command ". env.setup"
+2.	Cd into the sub-directory of interest (i.e "cd 1.64cobol_to_64python")
+3.	Run the "run.sh" shell script
+
+4.	(NOTE) When the test for 31-bit COBOL to 64-bit Python, "4.31cobol_to_64python" test is run, it creates a z/OS dataset that MUST BE DELETED before the test can be run again.
+	Please run the "rem_dataset.sh" script in the same sub-directory after running the test to delete the created dataset before re-running tests.
