@@ -1,5 +1,6 @@
 # git-encoding=iso8859-1 zos-working-tree-encoding=ibm-1047
 *       git-encoding=iso8859-1 zos-working-tree-encoding=iso8859-1
+*.cbl text encoding=IBM-1047
 
 .gitattributes   git-encoding=iso8859-1 zos-working-tree-encoding=iso8859-1
 .gitignore       git-encoding=iso8859-1 zos-working-tree-encoding=iso8859-1
