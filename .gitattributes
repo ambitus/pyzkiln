@@ -1,4 +1,5 @@
 *.cbl IBM-1047
+*.cbl text zos-working-tree-encoding=IBM-1047
 
 .gitattributes   git-encoding=iso8859-1 zos-working-tree-encoding=iso8859-1
 .gitignore       git-encoding=iso8859-1 zos-working-tree-encoding=iso8859-1
