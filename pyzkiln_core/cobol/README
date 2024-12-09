@@ -5,6 +5,7 @@ The tests cover:
 -	64-bit Python to 64-bit COBOL
 -	64-bit Python to 31-bit COBOL
 -	31-bit COBOL to 64-bit Python
+-	64-bit COBOL to 64-bit Python - using Pandas
 
 Since Python on z/OS is structured around CPython, Python data types will be formatted through C datatypes before being sent to COBOL. 
 To better explain interoperability between C and COBOL please refer to: 
@@ -17,3 +18,4 @@ https://www.ibm.com/docs/en/zos/2.5.0?topic=applications-communicating-between-c
 
 4.	(NOTE) When the test for 31-bit COBOL to 64-bit Python, "4.31cobol_to_64python" test is run, it creates a z/OS dataset that MUST BE DELETED before the test can be run again.
 	Please run the "rem_dataset.sh" script in the same sub-directory after running the test to delete the created dataset before re-running tests.
+5.	(NOTE) For the sample **5.pandas** to run, the Python package Pandas must be installed into your Python environment. Pandas is available to install on the [Python AI Toolkit for IBM z/OS](https://ibm-z-oss-oda.github.io/python_ai_toolkit_zos). If this package is installed into a venv or elsewhere, you must export the environment variable PYTHONPATH=<path_to_your_packages_location>
