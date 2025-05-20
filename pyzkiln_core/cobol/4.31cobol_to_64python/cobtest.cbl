@@ -6,6 +6,7 @@
        77  PGM-NAME                   PICTURE X(13).
        LINKAGE SECTION.
        PROCEDURE DIVISION.
-           MOVE "COBTEST2" to PGM-NAME.
+      *Dynamically call our 64-bit COBOL program
+           MOVE "DYCALLEE" to PGM-NAME.
            CALL PGM-NAME.
            STOP RUN.
